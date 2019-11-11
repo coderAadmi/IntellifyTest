@@ -1,0 +1,77 @@
+<androidx.cardview.widget.CardView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_marginBottom="8dp"
+        android:id="@+id/card_rel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textSize="20sp"
+            android:text="class_name"
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/class_name"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:text="Total classes"
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textSize="22sp"
+            android:text="300"
+            android:layout_below="@+id/class_name"
+            android:layout_alignStart="@+id/attended"
+            android:id="@+id/total_classes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/tv1"
+            android:layout_marginStart="20dp"
+            android:textSize="16sp"
+            android:text="Total Attended"
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textSize="22sp"
+            android:text="300"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/tv1"
+            android:layout_toEndOf="@+id/tv2"
+            android:id="@+id/attended"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
